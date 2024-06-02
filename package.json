@@ -1,0 +1,37 @@
+{
+  "name": "swiggy-clone",
+  "version": "1.0.0",
+  "description": "this is swiggy-clone project",
+  
+  "scripts": {
+    "test": "jest",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksha-create/swiggy-clone.git"
+  },
+  "keywords": [
+    "react",
+    "swiggy-clone",
+    "restaurant-web-app"
+  ],
+  "author": "Akshay Muddada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksha-create/swiggy-clone/issues"
+  },
+  "homepage": "https://github.com/aksha-create/swiggy-clone#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
