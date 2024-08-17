@@ -17,13 +17,17 @@ const Body = () => {
 
   const fetchData = async () => {
     try {
+      const baseUrl = process.env.REACT_APP_SWIGGY_BASE_URL;
+      const queryParams =
+        "?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING&api_key=${process.env.REACT_APP_SWIGGY_API_KEY}";
+      const fullUrl = `${baseUrl}${queryParams}`;
       const data = await fetch("https://handler-cors.vercel.app/fetch", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          url: `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING&api_key=${process.env.REACT_APP_SWIGGY_API_KEY}`,
+          url: fullUrl,
         }),
       });
 
