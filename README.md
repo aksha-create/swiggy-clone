@@ -1,1 +1,1 @@
-# swiggy-clone
+# restaurant-webapp
